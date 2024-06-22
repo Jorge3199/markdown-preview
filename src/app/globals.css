@@ -24,10 +24,36 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  border: 1px solid #ddd;
+}
+
+.divWithoutGlobalStyle {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+}
+
+/* styles.css */
+.export-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
